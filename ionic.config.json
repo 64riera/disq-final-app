@@ -1,0 +1,7 @@
+{
+  "name": "MaleanteClientApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
