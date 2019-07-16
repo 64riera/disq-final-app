@@ -1,0 +1,63 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
+</style> 
+
+<ion-header>
+  <ion-toolbar mode="ios" color="dark">
+      <ion-buttons slot="secondary">
+        <ion-button (click)="showActions()">
+            <ion-icon name="arrow-round-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    
+      <ion-title>Detalles</ion-title>
+      
+      <ion-buttons slot="primary">
+        <ion-button (click)="showActions()">
+            <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
+
+    <ion-content padding>
+      <strong>Destination</strong>
+      <h1>Madison, WI</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eaque accusantium, exercitationem iusto doloremque excepturi repellendus. Quisquam tempore tempora officia ducimus ex reiciendis quasi quae dolores dolorum recusandae in doloribus ratione repellat voluptate hic aliquid esse, incidunt error quas repudiandae non sapiente, qui suscipit? In reprehenderit quo minus accusamus alias repudiandae nisi aliquam dolorem ab?</p>
+    </ion-content>
+
+</ion-content>
+
+<ion-footer mode="md">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchFacebookPage()">
+          <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="secondary">
+        <ion-button (click)="launchTwitterPage()">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    
+      <ion-buttons slot="secondary">
+          <ion-button (click)="launchMusicPage()">
+              <ion-icon name="musical-notes"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-buttons slot="secondary">
+            <ion-button (click)="launchInstagramPage()">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
+
+

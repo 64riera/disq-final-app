@@ -20,7 +20,7 @@
       </ion-toolbar>
 </ion-header>
 
-<ion-content no-bounce>
+<ion-content color="dark" scrolly=false forceOverscroll="false">
   <div class="ion-padding logo-container">
 
     <!-- Main Content -->
@@ -36,7 +36,7 @@
           <ion-ripple-effect></ion-ripple-effect>
           <a>Conócenos</a>
       </ion-button>
-        <ion-button mode="ios" class="btn-blocked ion-activatable" color="light" fill="outline">
+        <ion-button routerLink="/events" mode="ios" class="btn-blocked ion-activatable" color="light" fill="outline">
             <ion-ripple-effect></ion-ripple-effect>
             <a>Próximos Eventos</a>
         </ion-button>
@@ -45,7 +45,7 @@
   </div>
 </ion-content>
 
-<ion-footer mode="ios">
+<ion-footer mode="md">
     <ion-toolbar color="dark">
       <ion-buttons slot="secondary">
         <ion-button (click)="launchFacebookPage()">
