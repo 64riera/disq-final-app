@@ -5,9 +5,10 @@
 <ion-header>
   <ion-toolbar mode="ios" color="dark">
       <ion-buttons slot="secondary">
-        <ion-button (click)="showActions()">
+        <!-- <ion-button routerLink="/home" routerDirection="forward">
             <ion-icon name="arrow-round-back"></ion-icon>
-        </ion-button>
+        </ion-button> -->
+        <ion-back-button defaultHref="/"></ion-back-button>
       </ion-buttons>
     
       <ion-title>Eventos</ion-title>
@@ -27,46 +28,25 @@
 
   <img class="maleante-logo" src="../assets/maleante.png" alt="">
 
-  <ion-card color="light" routerLink="/details">
+  <ion-card color="light" [routerLink]="['/details', event.id]" *ngFor="let event of events">
     <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-    <ion-card-header>
-      <ion-card-subtitle>Destination</ion-card-subtitle>
-      <ion-card-title>Madison, WI</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    <!-- <ion-card-header> -->
+      <ion-card-content>
+      <ion-card-title style="margin-bottom: 10px;">{{ event.title }}</ion-card-title>
+      <ion-card-subtitle>
+          <ion-icon name="pin"></ion-icon>
+          {{ event.place }}
+        </ion-card-subtitle>
+        <ion-card-subtitle style="margin-bottom: 15px;">
+            <ion-icon name="calendar"></ion-icon>
+            {{ event.date }}
+          </ion-card-subtitle>
+    <!-- </ion-card-header> -->
+      {{ event.description }}
     </ion-card-content>
+    
   </ion-card>
-  <ion-card color="light">
-    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-    <ion-card-header>
-      <ion-card-subtitle>Destination</ion-card-subtitle>
-      <ion-card-title>Madison, WI</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-    </ion-card-content>
-  </ion-card>
-  <ion-card color="light">
-    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-    <ion-card-header>
-      <ion-card-subtitle>Destination</ion-card-subtitle>
-      <ion-card-title>Madison, WI</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-    </ion-card-content>
-  </ion-card>
-  <ion-card color="light">
-    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-    <ion-card-header>
-      <ion-card-subtitle>Destination</ion-card-subtitle>
-      <ion-card-title>Madison, WI</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-    </ion-card-content>
-  </ion-card>
+  
 
 </div>
 

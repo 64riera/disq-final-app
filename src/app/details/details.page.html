@@ -5,9 +5,10 @@
 <ion-header>
   <ion-toolbar mode="ios" color="dark">
       <ion-buttons slot="secondary">
-        <ion-button (click)="showActions()">
+        <!-- <ion-button routerLink="/events">
             <ion-icon name="arrow-round-back"></ion-icon>
-        </ion-button>
+        </ion-button> -->
+        <ion-back-button defaultHref="/events"></ion-back-button>
       </ion-buttons>
     
       <ion-title>Detalles</ion-title>
@@ -18,15 +19,36 @@
         </ion-button>
       </ion-buttons>
     </ion-toolbar>
-</ion-header>
-
-<ion-content color="light">
     <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
 
+</ion-header>
+
+
+<ion-content color="light">
+  <div style="position:fixed; left:100px; top:100px;">
+  </div>
+    
+
     <ion-content padding>
-      <strong>Destination</strong>
-      <h1>Madison, WI</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eaque accusantium, exercitationem iusto doloremque excepturi repellendus. Quisquam tempore tempora officia ducimus ex reiciendis quasi quae dolores dolorum recusandae in doloribus ratione repellat voluptate hic aliquid esse, incidunt error quas repudiandae non sapiente, qui suscipit? In reprehenderit quo minus accusamus alias repudiandae nisi aliquam dolorem ab?</p>
+      <ion-card-title>
+        {{ event.title }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="pin"></ion-icon>
+        {{ event.place }}
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        <ion-icon name="calendar"></ion-icon>
+        {{ event.date }}
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        <ion-icon name="contacts"></ion-icon>
+        {{ event.artist }}
+      </ion-card-subtitle>
+      <p style="text-align: justify;">
+        {{ event.description }}
+      </p>
+      
     </ion-content>
 
 </ion-content>
