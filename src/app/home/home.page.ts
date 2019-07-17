@@ -81,6 +81,32 @@ export class HomePage {
     const browser = this.iab.create('https://maleanterecords.bandcamp.com/', '_blank', options);
   }
 
+  launchBitePortPage() {
+    const options: InAppBrowserOptions = {
+      zoom: 'no',
+      location:'yes',
+      toolbar:'yes',
+      clearcache: 'yes',
+      clearsessioncache: 'yes',
+      disallowoverscroll: 'yes',
+      enableViewportScale: 'yes'
+      };
+    const browser = this.iab.create('https://www.beatport.com/label/maleante-records/73078', '_blank', options);
+  }
+
+  launchSoundCloudPage() {
+    const options: InAppBrowserOptions = {
+      zoom: 'no',
+      location:'yes',
+      toolbar:'yes',
+      clearcache: 'yes',
+      clearsessioncache: 'yes',
+      disallowoverscroll: 'yes',
+      enableViewportScale: 'yes'
+      };
+    const browser = this.iab.create('https://soundcloud.com/maleanterecords', '_blank', options);
+  }
+
   async showActions() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Más opciones...',
