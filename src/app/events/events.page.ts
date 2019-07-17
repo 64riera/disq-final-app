@@ -14,7 +14,9 @@ export class EventsPage implements OnInit {
 
   events: EventI[];
 
-  constructor(private eventService: EventService, private loadingController: LoadingController, private iab: InAppBrowser, private actionSheetController: ActionSheetController) { }
+  constructor(
+    private eventService: EventService, private loadingController: LoadingController,
+    private iab: InAppBrowser, private actionSheetController: ActionSheetController) { }
 
   ngOnInit() {
     this.events = [];

@@ -4,31 +4,23 @@
 
 <ion-header>
   <ion-toolbar mode="ios" color="dark">
-      <ion-buttons slot="secondary">
-        <!-- <ion-button routerLink="/events">
-            <ion-icon name="arrow-round-back"></ion-icon>
-        </ion-button> -->
-        <ion-back-button defaultHref="/events"></ion-back-button>
-      </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-back-button defaultHref="/events"></ion-back-button>
+    </ion-buttons>
+  
+    <ion-title>Detalles</ion-title>
     
-      <ion-title>Detalles</ion-title>
-      
-      <ion-buttons slot="primary">
-        <ion-button (click)="showActions()">
-            <ion-icon name="menu"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-toolbar>
-    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-
+    <ion-buttons slot="primary">
+      <ion-button (click)="showActions()">
+          <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
 </ion-header>
 
-
 <ion-content color="light">
-  <div style="position:fixed; left:100px; top:100px;">
-  </div>
-    
-
+  <div style="position:fixed; left:100px; top:100px;"></div>
     <ion-content padding>
       <ion-card-title>
         {{ event.title }}
@@ -48,50 +40,46 @@
       <p style="text-align: justify;">
         {{ event.description }}
       </p>
-      
     </ion-content>
-
 </ion-content>
 
 <ion-footer mode="md">
   <ion-toolbar color="dark">
     <ion-buttons slot="secondary">
       <ion-button (click)="launchFacebookPage()">
-          <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
       </ion-button>
     </ion-buttons>
 
     <ion-buttons slot="secondary">
         <ion-button (click)="launchTwitterPage()">
-            <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
         </ion-button>
       </ion-buttons>
     
       <ion-buttons slot="secondary">
           <ion-button (click)="launchMusicPage()">
-              <ion-icon name="musical-notes"></ion-icon>
+            <ion-icon name="musical-notes"></ion-icon>
           </ion-button>
         </ion-buttons>
 
-
       <ion-buttons slot="secondary">
         <ion-button (click)="launchSoundCloudPage()">
-            <ion-icon name="microphone"></ion-icon>
+          <ion-icon name="microphone"></ion-icon>
         </ion-button>
       </ion-buttons>
 
       <ion-buttons slot="secondary">
         <ion-button (click)="launchBitePortPage()">
-            <ion-icon name="headset"></ion-icon>
+          <ion-icon name="headset"></ion-icon>
         </ion-button>
       </ion-buttons>
 
         <ion-buttons slot="secondary">
-            <ion-button (click)="launchInstagramPage()">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </ion-button>
-          </ion-buttons>
-
+          <ion-button (click)="launchInstagramPage()">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+        </ion-buttons>
   </ion-toolbar>
 </ion-footer>
 

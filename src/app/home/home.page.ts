@@ -25,8 +25,6 @@ export class HomePage {
     hideurlbar: 'yes'
     };
     const browser = this.iab.create('https://www.facebook.com/maleanterecords', '_blank', options);
-
-   
   }
 
   launchTwitterPage() {

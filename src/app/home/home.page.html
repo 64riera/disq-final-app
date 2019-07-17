@@ -6,21 +6,21 @@
   </style> 
 
 <ion-header>
-    <ion-toolbar mode="ios" color="dark">
-        <ion-buttons slot="secondary">
-          <ion-button (click)="showActions()">
-              <ion-icon name="menu"></ion-icon>
-          </ion-button>
-        </ion-buttons>
+  <ion-toolbar mode="ios" color="dark">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="showActions()">
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-title>Inicio</ion-title>
       
-        <ion-title>Inicio</ion-title>
-        
-        <ion-buttons slot="primary">
-          <ion-button>
-            <ion-icon name="calendar"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      </ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon name="calendar"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content color="dark" scrolly=false forceOverscroll="false">
@@ -30,61 +30,56 @@
 
     <img class="maleante-logo" src="../assets/maleante.png" alt="">
     <h2 class="logo-text">MALEANTE RECORDS</h2>
-
     <div class="btn-container">
-        <!-- <div>
-            <ion-button mode="ios" class="btn-blocked" color="light" fill="outline" (click)="launchMixPage()"><a>Conócenos</a></ion-button>
-        </div> -->
-        <ion-button mode="ios" (click)="launchMixPage()" class="btn-blocked ion-activatable" color="light" fill="outline">
-          <ion-ripple-effect></ion-ripple-effect>
-          <a>Conócenos</a>
+      <ion-button mode="ios" (click)="launchMixPage()" class="btn-blocked ion-activatable" color="light" fill="outline">
+        <ion-ripple-effect></ion-ripple-effect>
+        <a>Conócenos</a>
       </ion-button>
-        <ion-button routerLink="/events" mode="ios" class="btn-blocked ion-activatable" color="light" fill="outline">
-            <ion-ripple-effect></ion-ripple-effect>
-            <a>Próximos Eventos</a>
-        </ion-button>
+      <ion-button routerLink="/events" mode="ios" class="btn-blocked ion-activatable" color="light" fill="outline">
+        <ion-ripple-effect></ion-ripple-effect>
+        <a>Próximos Eventos</a>
+      </ion-button>
     </div>
 
   </div>
 </ion-content>
 
 <ion-footer mode="md">
-    <ion-toolbar color="dark">
-      <ion-buttons slot="secondary">
-        <ion-button (click)="launchFacebookPage()">
-            <ion-icon name="logo-facebook"></ion-icon>
-        </ion-button>
-      </ion-buttons>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchFacebookPage()">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-      <ion-buttons slot="secondary">
-          <ion-button (click)="launchTwitterPage()">
-              <ion-icon name="logo-twitter"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      
-        <ion-buttons slot="secondary">
-            <ion-button (click)="launchMusicPage()">
-                <ion-icon name="musical-notes"></ion-icon>
-            </ion-button>
-          </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchTwitterPage()">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchMusicPage()">
+        <ion-icon name="musical-notes"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-          <ion-buttons slot="secondary">
-            <ion-button (click)="launchSoundCloudPage()">
-                <ion-icon name="microphone"></ion-icon>
-            </ion-button>
-          </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchSoundCloudPage()">
+        <ion-icon name="microphone"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-          <ion-buttons slot="secondary">
-            <ion-button (click)="launchBitePortPage()">
-                <ion-icon name="headset"></ion-icon>
-            </ion-button>
-          </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchBitePortPage()">
+        <ion-icon name="headset"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-          <ion-buttons slot="secondary">
-              <ion-button (click)="launchInstagramPage()">
-                  <ion-icon name="logo-instagram"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-
-    </ion-toolbar>
-  </ion-footer>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="launchInstagramPage()">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

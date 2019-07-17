@@ -4,54 +4,43 @@
 
 <ion-header>
   <ion-toolbar mode="ios" color="dark">
-      <ion-buttons slot="secondary">
-        <!-- <ion-button routerLink="/home" routerDirection="forward">
-            <ion-icon name="arrow-round-back"></ion-icon>
-        </ion-button> -->
-        <ion-back-button defaultHref="/"></ion-back-button>
-      </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Eventos</ion-title>
     
-      <ion-title>Eventos</ion-title>
-      
-      <ion-buttons slot="primary">
-        <ion-button (click)="showActions()">
-            <ion-icon name="menu"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button (click)="showActions()">
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content color="dark" no-bounce>
-<div class="ion-padding logo-container">
+  <div class="ion-padding logo-container">
 
-  <!-- Main Content -->
+    <!-- Main Content -->
 
-  <img class="maleante-logo" src="../assets/maleante.png" alt="">
-
-  <ion-card color="light" [routerLink]="['/details', event.id]" *ngFor="let event of events">
-    <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
-    <!-- <ion-card-header> -->
-      <ion-card-content>
-      <ion-card-title style="margin-bottom: 10px;">{{ event.title }}</ion-card-title>
-      <ion-card-subtitle>
+    <img class="maleante-logo" src="../assets/maleante.png" alt="">
+    <ion-card color="light" [routerLink]="['/details', event.id]" *ngFor="let event of events">
+      <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041-700.jpg" />
+        <ion-card-content>
+        <ion-card-title style="margin-bottom: 10px;">{{ event.title }}</ion-card-title>
+        <ion-card-subtitle>
           <ion-icon name="pin"></ion-icon>
           {{ event.place }}
         </ion-card-subtitle>
         <ion-card-subtitle style="margin-bottom: 15px;">
-            <ion-icon name="calendar"></ion-icon>
-            {{ event.date }}
-          </ion-card-subtitle>
-    <!-- </ion-card-header> -->
-      {{ event.description }}
-    </ion-card-content>
+          <ion-icon name="calendar"></ion-icon>
+          {{ event.date }}
+        </ion-card-subtitle>
+        {{ event.description }}
+      </ion-card-content>
+    </ion-card>
     
-  </ion-card>
-  
-
-</div>
-
-
-
+  </div>
 </ion-content>
 
 

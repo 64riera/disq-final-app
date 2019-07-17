@@ -23,7 +23,6 @@ export class DetailsPage implements OnInit {
 
   eventId = null;
 
-
   constructor(
     private route: ActivatedRoute, private nav: NavController, private eventService: EventService,
     private loadingController: LoadingController, private iab: InAppBrowser, private actionSheetController: ActionSheetController) { }
